@@ -1,0 +1,20 @@
+{
+  "name": "new4app",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
