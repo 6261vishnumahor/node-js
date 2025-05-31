@@ -7,25 +7,25 @@
 //     console.log("the server is run the 3000 PORT")
 // })
 
-// const http = require('http')
-// const server = http.createServer((req, res) => {
-//    if(req.url=="/"){
-//     res.writeHead(200,{'Content-type':'text/html'})
-//     res.end("hello world")
-//    }
-//    else if(req.url=="/about"){
-//     res.writeHead(200,{'Content-type':'text/html'})
-//     res.end("this is a about page")
-//    }
-//    else if(req.url=="/contact"){
-//     res.writeHead(200,{'Content-type':'text/html'})
-//     res.end("this is a contact page")
-//    }
+const http = require('http')
+const server = http.createServer((req, res) => {
+   if(req.url=="/"){
+    res.writeHead(200,{'Content-type':'text/html'})
+    res.end("hello world")
+   }
+   else if(req.url=="/about"){
+    res.writeHead(200,{'Content-type':'text/html'})
+    res.end("this is a about page")
+   }
+   else if(req.url=="/contact"){
+    res.writeHead(200,{'Content-type':'text/html'})
+    res.end("this is a contact page")
+   }
 
-// })
-// server.listen(3000, () => {
-//         console.log("the server is run the 3000 PORT")
-//     })
+})
+server.listen(3000, () => {
+        console.log("the server is run the 3000 PORT")
+    })
 
 
 // const url = require('url')
@@ -47,17 +47,17 @@
 // <-------------------------------------------------------use the express--------------------------------------------------------->
 
 
-var express=require('express')
-var app =express();
-var port=3000
+// var express=require('express')
+// var app =express();
+// var port=3000
 
-var router=require("./routes/first.js")
-app.use(router)
-app.use((req,res)=>{
-   res.status(404).send("page not found")
-})
+// var router=require("./routes/first.js")
+// app.use(router)
+// app.use((req,res)=>{
+//    res.status(404).send("page not found")
+// })
 
-app.listen(port,(err)=>{
-   if(err) throw err;
-   console.log(`running 0n ${port} port`)
-})
+// app.listen(port,(err)=>{
+//    if(err) throw err;
+//    console.log(`running 0n ${port} port`)
+// })
